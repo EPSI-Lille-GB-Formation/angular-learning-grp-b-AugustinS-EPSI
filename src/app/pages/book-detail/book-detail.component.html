@@ -1,16 +1,20 @@
 <div class="container">
-    <header class="header">
-      <img src="../../../assets/images/logoBibliotech.png" alt="Bibliotech Logo" class="logo"> 
-      <nav class="main-nav">
-        <a (click)="goBooksPage()" class="nav-link">Recherche</a>
-        <a (click)="goContributionsPage()" class="nav-link">Mes contributions</a>
-        <a (click)="goProfilPage()" class="nav-link">Profil</a>
-      </nav>
-    </header>
-    <button (click)="logout()" class="button" id="exit">Déconnexion</button>
+  <header class="header">
+    <div id="cadrebibli">
+    <img src="../../../assets/images/logoBibliotech.png" alt="Bibliotech Logo" class="logo">
+    <a id="titre" style="text-decoration: none">Biblio'Tech</a>
+    <nav class="main-nav">
+      <a (click)="goBooksPage()" class="nav-link">Liste des documents</a>
+      <a (click)="goContributionsPage()" class="nav-link">Contributions personnelles</a>
+      <a (click)="goProfilPage()" class="nav-link">Profil</a>
+    </nav>
+    </div>
+    <button style="margin-top:-6%" (click)="logout()" class="button" id="exit">Se déconnecter</button>
+  </header>
 <div class="fenetre">
 <div *ngIf="book">
     <h2>{{ book.title }}</h2>
+    <h1>{{ book.resume}}</h1>
   </div>
 </div>
 
