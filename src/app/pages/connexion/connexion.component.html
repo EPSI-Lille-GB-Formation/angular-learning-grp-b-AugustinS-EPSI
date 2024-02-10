@@ -1,0 +1,27 @@
+<div class="container">
+  <header class="header">
+    <div id="cadrebibli">
+      <a id="titre" href="/" style="text-decoration: none">Biblio'Tech</a>
+    </div>
+  </header>
+
+  <div id="cadre">
+
+      <h1 id="connectitre">Connexion</h1>
+      <p id="accroche">Accédez à la plus grande bibliothèque<br> comunautaire en quelques clics</p>
+      <br>
+      <br>
+      <br>
+      <form (ngSubmit)="onSubmit()">
+        <div style="text-align: center;"><p id="connect">Adresse mail<input type="email" [(ngModel)]="user.email" name="email" required placeholder="Email" style="margin-left:5%;"></p></div>
+        <div style="text-align: center;"><p id="connect">Mot de passe<input type="password" [(ngModel)]="user.password" name="password" required placeholder="Mot de passe" style="margin-left:5%;"></p></div>
+        <button type="submit" id="buttonconnect">CONNEXION</button>
+        <br>
+        <br>
+        <a id="inscript" href="/inscription">Je n'ai pas encore de compte</a>
+      </form>
+
+
+    </div>
+  </div>
+
